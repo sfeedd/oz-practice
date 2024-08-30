@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>선택자 더 알아보기</title>
+    <style>
+        /*
+        기호와 함께 사용하는 속성 선택자
+        * : 값의 포함 여부
+        ^ : 값의 시작 여부
+        $ : 값의 끝 여부
+        */
+        img[alt]{
+            border:  5px dashed red;
+        }
+        em{
+            color: palevioletred;
+        }
+        #sam ~p{
+            color: orange;
+        }
+    </style>
+</head>
+<body>
+    <img src="images/jinhae.jpeg" width="120" alt="진해">
+    <img src="images/jinhae.jpeg" width="120">
+    <img src="images/jinhae.jpeg" width="120" id="sam">
+    <p>진해는 배정현의 고향이자, 현 거주지이기도 합니다.</p>
+    <p>진해에는 해군기지가 있습니다.</p>
+    <p><em>진해군항제</em> 와 로망스 다리가 유명합니다.</p>
+</body>
+</html>
