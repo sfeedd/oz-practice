@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>선택자 기본편</title>
+    <style>
+        *{
+            color: red;
+        }
+        /*
+        선택자 우선순위: 쓰여진 순서랑 관계없이 적용되는 순위
+        1. 아이디 선택자 
+        2. 클래스 선택자
+        3. 태그 선택자
+        */
+        h2, p, li{
+            color: yellow;
+        }
+        li{
+            color: blue;
+        }
+        li.soccer{
+            color: purple;
+        }
+        li#tabletennis{
+            color: orange;
+        }
+    </style>
+</head>
+<body>
+    <h2>스포츠 종류</h2>
+    <p>재밌는 스포츠 종류가 많습니다.</p>
+    <ul>
+        <li class="soccer">축구</li>
+        <li class="basketball">농구</li>
+        <li class="badminton">배드민턴</li>
+        <li class="tabletennis">탁구</li>
+        <li class="swimming">수영</li>
+    </ul>
+</body>
+</html>
