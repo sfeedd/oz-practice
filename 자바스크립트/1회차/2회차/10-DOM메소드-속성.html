@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM 메소드 & 속성</title>
+</head>
+<body>
+    <h1 id="song-title" class="heading" title="벤의 2016년 발매곡">
+        <span>안갯길</span>
+    </h1>
+    <p class="lyrics">
+        안갯길 넘어 그대가 날 찾고 있다면
+    </p>
+    <p class="lyrics">
+        달빛이 그린 저 길을 따라와 줄래요
+    </p>
+    <script>
+        console.log(document.querySelectorAll(".lyrics"))
+        console.log(document.getElementsByClassName("lyrics"))
+        const title = document.getElementById("song-title")
+        console.log(title)
+
+        console.log(title.textContent)
+        console.log(title.innerText)
+        console.log(title.className)
+        console.log(title.style)
+    </script>
+</body>
+</html>
