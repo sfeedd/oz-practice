@@ -1,0 +1,20 @@
+/* 다크모드 스타일 */
+body.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+.dark-mode .table {
+    color: white;
+}
+
+/* 회원가입 및 다크모드 버튼 위치 설정 */
+.top-buttons {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    display: flex;
+    gap: 10px;
+    /* 버튼 사이 간격 */
+}
